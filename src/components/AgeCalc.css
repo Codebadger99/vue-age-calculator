@@ -1,0 +1,152 @@
+.card{
+	background-color: hsl(0, 0%, 100%);
+	padding: 4rem 2rem;
+	border-radius: 3rem;
+	border-bottom-right-radius: 12rem;
+}
+
+.card_wrapper{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 1.5rem;
+	flex-direction: column;
+}
+
+.age_wrapper{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 3rem;
+}
+
+.day_wrapper, .month_wrapper, .year_wrapper{
+	display: grid;
+	gap: .8rem;
+}
+
+h4{
+	text-transform: uppercase;
+	color: hsl(0, 1%, 44%);
+}
+
+input{
+	padding: 1rem .4rem;
+	width: 8rem;
+	border: .9px solid hsl(0, 0%, 86%);
+	border-radius: .6rem;
+	outline: none;
+}
+
+input:focus{
+	border-color: hsl(259, 100%, 65%);
+}
+
+input::placeholder{
+	color: hsl(0, 1%, 44%);
+	font-size: 1rem;
+}
+
+.arrow_wrapper{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.line{
+	width: 30rem;
+	height: .2rem;
+	background: hsl(0, 0%, 94%);
+}
+
+button{
+  background:  hsl(259, 100%, 65%);
+  border: none;
+  border-radius: 50%;
+  padding: 1rem;
+  cursor: pointer;
+}
+
+button:hover{
+	background: hsl(0, 0%, 8%);
+	transition: all .3s ease-in-out;
+}
+
+.age_calculated_wrapper{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	gap: 1.5rem;
+}
+
+.age_years, age_months, age_days{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 2rem;
+}
+
+h1{
+	font-size: 3rem;
+	color: hsl(0, 0%, 8%);
+}
+
+span{
+	color: hsl(259, 100%, 65%);
+}
+
+.error{
+/*	margin-top: 0.1rem;*/
+	color: hsl(0, 100%, 67%);
+}
+
+.focus{
+	border-color: hsl(0, 100%, 67%);
+}
+
+@media screen and (max-width: 425px){
+	.card{
+		padding: 4rem .7rem;
+   
+	}
+
+	.age_wrapper{
+		align-items: center;
+		justify-content: center;
+		gap: .9rem;
+	}
+
+	button{
+	display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+	}
+
+	.line{
+		position: absolute;
+		width: 90%;
+	}
+
+	input{
+		width: 7rem;
+	}
+}
+
+@media screen and (max-width: 375px){
+input{
+width: 6rem
+}
+}
+
+@media screen and (max-width: 320px){
+  input{
+  	width: 5rem;
+
+  }
+
+  .card{
+  	border-radius: 5rem;
+  }
+}
